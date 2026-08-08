@@ -11,13 +11,14 @@
 
         <ImageView
             android:id="@+id/thumbnails"
-            android:layout_width="1000dp"
-            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/thumbnails"
+            android:src="@drawable/movie_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MovieDetails" />
+            app:layout_constraintTop_toBottomOf="@+id/MovieDetails"
+            android:scaleType="fitXY"/>
 
         <TextView
             android:id="@+id/MovieDetails"
@@ -40,6 +41,7 @@
             android:textColor="@color/white"
             android:layout_marginBottom="60dp"
             />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
